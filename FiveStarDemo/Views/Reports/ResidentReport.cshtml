@@ -1,0 +1,65 @@
+﻿@model IEnumerable<FiveStarDemo.Models.FiveStarResidentInformation>
+
+@{
+    ViewBag.Title = "ResidentReport";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Resident Report</h2>
+
+
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Last Name</th>
+        <th>DD214</th>
+        <th>TB Test</th>
+        <th>Photo ID</th>
+        <th>HUDVASH Voucher</th>
+        <th>Background Check</th>
+        <th>Room ID</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ResInfo_ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ResInfo_Lname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ResInfo_DD214)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ResInfo_TBTest)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ResInfo_PhotoID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ResInfo_HUDVASH_Vouch)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ResInfo_BackCheck)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ResInfo_RoomID)
+            </td>
+        </tr>
+    }
+</table>
+<br>
+<br>
+<div>
+    <fieldset>
+        <legend>Report Export Options</legend>
+        <div style="padding:10px; border:1px solid black">
+            <div><a href="@Url.Action("ResidentReportFormat",new {id= "PDF"})">PDF</a></div>
+            <div><a href="@Url.Action("ResidentReportFormat",new {id= "Excel"})">Excel</a></div>
+            <div><a href="@Url.Action("ResidentReportFormat",new {id= "Word"})">Word</a></div>
+            <div><a href="@Url.Action("ResidentReportFormat",new {id= "Image"})">Image File</a></div>
+        </div>
+     </fieldset>
+</div>

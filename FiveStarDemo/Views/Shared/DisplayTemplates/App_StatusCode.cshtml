@@ -1,0 +1,26 @@
+﻿@model System.Int32
+
+@if (Model == 0)
+{
+    @:Incomplete Application
+}
+else if (Model == 1)
+{
+    @:Complete Application
+}
+else if (Model == 2)
+{
+    @:Incomplete Application - Pending Missing Documents
+}
+else if (Model == 3)
+{
+    @:Complete Application - Pending Interview
+}
+else if (Model == 4)
+{
+    @:Complete Application - Pending Final Decision
+}
+else
+{
+    @:Status Code Does Not Exist
+}

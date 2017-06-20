@@ -1,0 +1,58 @@
+﻿@model IEnumerable<FiveStarDemo.Models.FiveStarApplicantInformation>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Applicant Listing</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+@foreach (var item in Model)
+{
+    <hr>
+    <div class="card">
+        <img class="card-img" src="~/Content/Images/5Star_CardPhoto.PNG" alt="Applicant Profile" style="width:20%">
+        <div class="card-container">
+            <table class="table" style="width:100%">
+                <tr>
+                    <th>
+                        @Html.LabelFor(model => model, "ID")
+                    </th>
+                    <th>
+                        @Html.LabelFor(model => model, "Status")
+                    </th>
+                    <th>
+                        @Html.LabelFor(model => model, "First Name")
+                    </th>
+                    <th>
+                        @Html.LabelFor(model => model, "Last Name")
+                    </th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AppInfo_ID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AppInfo_Status)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AppInfo_Fname)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AppInfo_Lname)
+                    </td>
+                </tr>
+            </table>
+            <div class="card-footer">
+                @Html.ActionLink("Edit", "Edit", new { id = item.AppInfo_ID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.AppInfo_ID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.AppInfo_ID })
+            </div>
+        </div>
+    </div>
+    <hr>
+}

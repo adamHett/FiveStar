@@ -1,0 +1,67 @@
+﻿@model IEnumerable<FiveStarDemo.Models.FiveStarApplicantInformation>
+
+@{
+    ViewBag.Title = "ApplicantReport";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Applicant Report</h2>
+
+
+ <table class="table">
+    <tr>
+        <th>App ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>SSN</th>
+        <th>App Status</th>
+        <th>App Date</th>
+        <th>DOB</th>
+        <th>Gender</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.AppInfo_ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AppInfo_Fname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AppInfo_Lname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AppInfo_SSN)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AppInfo_Status)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AppInfo_Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AppInfo_DOB)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AppInfo_Gender)
+            </td>
+        </tr>
+    }
+</table>
+<br>
+<br>
+<div>
+    <fieldset>
+        <legend>Report Export Options</legend>
+        <div style="padding:10px; border:1px solid black">
+            <div><a href="@Url.Action("ApplicantReportFormat",new {id= "PDF"})">PDF</a></div>
+            <div><a href="@Url.Action("ApplicantReportFormat",new {id= "Excel"})">Excel</a></div>
+            <div><a href="@Url.Action("ApplicantReportFormat",new {id= "Word"})">Word</a></div>
+            <div><a href="@Url.Action("ApplicantReportFormat",new {id= "Image"})">Image File</a></div>
+        </div>
+    </fieldset>
+</div>  
+
+

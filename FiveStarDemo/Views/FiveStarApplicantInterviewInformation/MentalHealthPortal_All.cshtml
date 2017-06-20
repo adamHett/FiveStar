@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewBag.Title = "MentalHealthPortal_All";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Mental Health Portal - Search All Applicants</h2>
+
+<div ng-app="FSD">
+    <div ng-controller="MentalHealthPortalViewController">
+        <hr>
+        <div><input type="text" placeholder="Search Applicant" ng-model="searchApplicant" /></div>
+        <hr>
+        <div class="card" ng-repeat="item in AMHList.AllMentalHealthProfiles | filter : searchApplicant">
+            <img class="card-img" src="~/Content/Images/5Star_CardPhoto.PNG" alt="5 Star Mental Health Profile" style="width:20%">
+            <div class="card-container">
+                <table class="table">
+                    <tr>
+                        <th>ID</th>
+                        <th>SSN </th>
+                        <th>First Name </th>
+                        <th>Last Name </th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td><label>{{item.AppIntInfo_ID}}</label></td>
+                        <td><label>({{item.AppIntInfo_SSN}})</label></td>
+                        <td><label>{{item.AppIntInfo_Fname}}</label></td>
+                        <td><label>{{item.AppIntInfo_Lname}}</label></td>
+                        <td>
+                </table>
+                <div class="card-footer">
+                    <a ng-href="@Url.Content("~/FiveStarApplicantInterviewInformation/Edit/"){{item.AppIntInfo_ID}}">Edit</a> |
+                    <a ng-href="@Url.Content("~/FiveStarApplicantInterviewInformation/Details/"){{item.AppIntInfo_ID}}">Details</a> |
+                    <a ng-href="@Url.Content("~/FiveStarApplicantInterviewInformation/Delete/"){{item.AppIntInfo_ID}}">Delete</a>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+</div>
+
+

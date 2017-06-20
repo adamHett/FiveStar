@@ -1,0 +1,34 @@
+﻿@model System.Int32
+
+@if (Model == 0)
+{
+    @:Not Accepeted
+}
+else if (Model == 1)
+{
+    @:Accepted - Current Resident
+}
+else if (Model == 2)
+{
+    @:Accepted - Conditionally 
+}
+else if (Model == 3)
+{
+    @:Accepted - Emergency(72 hour max)
+}
+else if (Model == 4)
+{
+    @:Accepted - Returning Resident
+}
+else if (Model == 5)
+{
+    @:Accepted - Graduated from Program
+}
+else if (Model == 6)
+{
+    @:Accepted - Removed from Program
+}
+else
+{
+    @:Status Code Does Not Exist
+}

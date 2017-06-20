@@ -1,0 +1,579 @@
+﻿@model FiveStarDemo.Models.FiveStarApplicantInterviewInformation
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<hr>
+<h3>Mental Health Assessment</h3>
+<hr>
+<label class="accordion">Personal Information</label>
+<div class="panel">
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_ID, "ID")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_ID)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_Date, "Date")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_Date)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_Status, "Status")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_Status)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_SSN, "SSN")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_SSN)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_Fname, "First Name")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_Fname)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_Lname, "Last Name")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_Lname)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_DOB, "DOB")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_DOB)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_Age, "Age")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_Age)
+        </dd>
+    </dl>
+</div>
+<label class="accordion">Assessment Information</label>
+<div class="panel">
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_MHCurrentHarm, "Are you thinking of killing yourself?")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_MHCurrentHarm)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_MHPastHarm, "Have you ever tried to commit suicide?")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_MHPastHarm)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_MHPastHarm_Details, "If Yes, when?")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_MHPastHarm_Details)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_MHTBI, "Traumatic Brain Injury(TBI)")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_MHTBI)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_MHPTS, "Post-Traumatic Stress(PTS)")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_MHPTS)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_MHSubAbuse, "Substance Abuse")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_MHSubAbuse)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_MHBipoDisorder, "Bipolar Disorder")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_MHBipoDisorder)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_MHSchizo, "Schizophrenia")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_MHSchizo)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_MHDepression, "Depression")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_MHDepression)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_MHAnxiety, "Anxiety")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_MHAnxiety)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_MHPersDisorder, "Any Personality Disorder")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_MHPersDisorder)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_MHOther, "List of Other Mental Health Details")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_MHOther)
+        </dd>
+    </dl>
+</div>
+<label class="accordion">Addictions and Substance Abuse</label>
+<div class="panel">
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_ASAAlcohol, "Alcohol")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_ASAAlcohol)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_ASAGambling, "Gambling")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_ASAGambling)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_ASAPrescriptDrug, "Prescription Drugs")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_ASAPrescriptDrug)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_ASAStreetDrug, "Street Drugs")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_ASAStreetDrug)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_ASATobacco, "Tobacco Products")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_ASATobacco)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_ASADrugChoice1, "Drug of Choice")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_ASADrugChoice1)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_ASADrugChoice2, "2nd drug of choice")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_ASADrugChoice2)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_ASADrugChoice3, "3rd drug of choice")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_ASADrugChoice3)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_ASACurrent_TimeSober, "Current Period of Sobriety Timeframe")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_ASACurrent_TimeSober)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_ASAPast_TimeSober, "Longest Period of Sobriety")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_ASAPast_TimeSober)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_ASADUI_DWI, "DUI or DWI Conviction")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_ASADUI_DWI)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_ASAPossess_Conviction, "Controlled Substance Conviction - Possession")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_ASAPossess_Conviction)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_ASASell_Conviction, "Controlled Substance Conviction - Selling"))
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_ASASell_Conviction)
+        </dd>
+    </dl>
+</div>
+<label class="accordion">Physical Health</label>
+<div class="panel">
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_PHPCP_Fname, "Primary Care Physician First Name")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_PHPCP_Fname)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_PHPCP_Lname, "Primary Care Physician Last Name")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_PHPCP_Lname)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_PHPCP_Phone, "Primary Care Physician Phone Number")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_PHPCP_Phone)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_PHPCP_StAddress, "Primary Care Physician Street Address")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_PHPCP_StAddress)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_PHPCP_City, "Primary Care Physician City")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_PHPCP_City)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_PHPCP_State, "Primary Care Physician State")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_PHPCP_State)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_PHPCP_Zip, "Primary Care Physician Zip")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_PHPCP_Zip)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_PHPCP_ContactOK, "Permission to Contact Primary Care Physician")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_PHPCP_ContactOK)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_PHSeizures, "Seizures")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_PHSeizures)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_PHAllergies, "List of Allergies")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_PHAllergies)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_PHOther, "Other Medical Issues")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_PHOther)
+        </dd>
+    </dl>
+</div>
+<label class="accordion">Medications</label>
+<div class="panel">
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_MedsCondition1, "Condition 1")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_MedsCondition1)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_MedsMedication1, "Medication 1")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_MedsMedication1)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_MedsDosage1, "Dosage 1")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_MedsDosage1)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_MedsFrequency1, "Frequency 1")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_MedsFrequency1)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_MedsCondition2, "Condition 2")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_MedsCondition2)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_MedsMedication2, "Medication 2")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_MedsMedication2)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_MedsDosage2, "Dosage 2")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_MedsDosage2)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_MedsFrequency2, "Frequency 2")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_MedsFrequency2)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_MedsCondition3, "Condition 3")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_MedsCondition3)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_MedsMedication3, "Medication 3")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_MedsMedication3)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_MedsDosage3, "Dosage 3")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_MedsDosage3)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_MedsFrequency3, "Frequency 3")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_MedsFrequency3)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_MedsCondition4, "Condition 4")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_MedsCondition4)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_MedsMedication4, "Medication 4")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_MedsMedication4)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_MedsDosage4, "Dosage 4")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_MedsDosage4)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_MedsFrequency4, "Frequency 4")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_MedsFrequency4)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_MedsCondition5, "Condition 5")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_MedsCondition5)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_MedsMedication5, "Medication 5")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_MedsMedication5)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_MedsDosage5, "Dosage 5")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_MedsDosage5)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_MedsFrequency5, "Frequency 5")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_MedsFrequency5)
+        </dd>
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_MedsOther, "List of Other Medication Details")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_MedsOther)
+        </dd>
+    </dl>
+</div>
+<label class="accordion">Agreements and Acknowledgements</label>
+<div class="panel">
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.LabelFor(model => model.AppIntInfo_AgreeSignDate, "Agreement Signature Date")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppIntInfo_AgreeSignDate)
+        </dd>
+    </dl>
+</div>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <hr>
+    <div class="form-group">
+        <div style="margin-left: auto; margin-right: auto; text-align: center">
+            <input type="submit" value="Delete" class="btn btn-default fsv-btn" /> |
+            @Html.ActionLink("Back to List", "MentalHealthPortal_All")
+        </div>
+    </div>
+        <hr>
+
+}
+

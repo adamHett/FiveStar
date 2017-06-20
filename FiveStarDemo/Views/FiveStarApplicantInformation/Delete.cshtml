@@ -1,0 +1,768 @@
+﻿@model FiveStarDemo.Models.FiveStarApplicantInformation
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete Applicant Profile</h2>
+
+<h3>Are you sure you want to delete this profile?</h3>
+<label class="accordion">Demographic Information</label>
+<div class="panel">
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_ID, "ID")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_ID)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_Status, "Status")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_Status)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_Date, "Date")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_Date)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_Type, "Type")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_Type)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_SSN, "SSN")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_SSN)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_Fname, "First Name")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_Fname)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_Lname, "Last Name")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_Lname)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_DOB, "DOB")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_DOB)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_Age, "Age")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_Age)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_Email, "Email")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_Email)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_Phone, "Phone Number")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_Phone)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_Gender, "Gender")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_Gender)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_Need1, "Top Need")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_Need1)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_Need2, "2nd Need")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_Need2)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_LTGoal, "Long Term Goal")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_LTGoal)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_ReferAgency, "Referring Agency")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_ReferAgency)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_ReferAgent, "Referring Agent")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_ReferAgent)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_NonRefer, "Non Referal ")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_NonRefer)
+        </dd>
+    </dl>
+</div>
+<label class="accordion">Personal Information</label>
+<div class="panel">
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_HousingStatus, "Housing Status")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_HousingStatus)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_Facility, "Housing Facility")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_Facility)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_StayLength, "Previous Facility Stay Timeframe")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_StayLength)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_EContFname, "Emergency Contact First Name")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_EContFname)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_EContLname, "Emergency Contact Last Name")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_EContLname)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_EContRelation, "Emergency Contact Relationship")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_EContRelation)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_EContStAddress, "Emergency Contact Street Address")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_EContStAddress)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_EContCity, "Emergency Contact City")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_EContCity)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_EContState, "Emergency Contact State")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_EContState)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_EContZip, "Emergency Contact Zip")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_EContZip)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_EContPH, "Emergency Contact Phone Number")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_EContPH)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_MaritalStatus, "Marital Status")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_MaritalStatus)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_Children, "Number of Children")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_Children)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_ChildrenMale, "Male Children")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_ChildrenMale)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_ChildrenFem, "Female Children")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_ChildrenFem)
+        </dd>
+    </dl>
+</div>
+<label class="accordion">Education and Training </label>
+<div class="panel">
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_TrainLevel, "Highest Education Level")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_TrainLevel)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_TrainSkills, "Special Skills")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_TrainSkills)
+        </dd>
+    </dl>
+</div>
+<label class="accordion"> Military Service</label>
+<div class="panel">
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_MilServDD214, "DD214")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_MilServDD214)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_MilServBranch, "Service Branch")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_MilServBranch)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_MilServBeginDate, "Service Begin Date")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_MilServBeginDate)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_MilServEndDate, "Service End Date")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_MilServEndDate)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_MilServDischargeRnk, "Discharge Rank")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_MilServDischargeRnk)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_MilServMOS, "Months of Service")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_MilServMOS)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_MilServCombat, "Combat Duty")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_MilServCombat)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_MilServSepCode, "Sep Code")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_MilServSepCode)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_MilServPurpHrt, "Purple Heart")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_MilServPurpHrt)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_MilServTOD, "TOD")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_MilServTOD)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_MilServDischargeStatus, "Discharge Status")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_MilServDischargeStatus)
+        </dd>
+    </dl>
+</div>
+<label class="accordion"> Monthly Income </label>
+<div class="panel">
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_MoIncServiceDisability, "Service Disability Income")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_MoIncServiceDisability)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_MoIncSDPercent, "% SD Monthly Income")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_MoIncSDPercent)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_MoIncSDMoAmt, "SD Monthly Amount")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_MoIncSDMoAmt)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_MoIncCurrEmployed, "Current Employment")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_MoIncCurrEmployed)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_MoIncCEMoAmt, "Current Employment Income")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_MoIncCEMoAmt)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_MoIncSSI, "SSI Income")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_MoIncSSI)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_MoIncSSDI, "SSDI Income")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_MoIncSSDI)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_MoIncFoodStamps, "Food Stamps Income")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_MoIncFoodStamps)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_MoIncOther, "Other Monthly Income")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_MoIncOther)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_MoIncMoChildSupport, "Monthly Child Support")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_MoIncMoChildSupport)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_MoIncTotalMoAmt, "Total Monthly Income")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_MoIncTotalMoAmt)
+        </dd>
+    </dl>
+</div>
+<label class="accordion"> Employment History </label>
+<div class="panel">
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_EmpHistJobTitle, "Job Title 1")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_EmpHistJobTitle)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_EmpHistEmployer, "Employer 1")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_EmpHistEmployer)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_EmpHistCity, "Employer City 1")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_EmpHistCity)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_EmpHistJobStart, "Job 1 Start Date")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_EmpHistJobStart)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_EmpHistJobEnd, "Job 1 End Date")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_EmpHistJobEnd)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_EmpHistMoWage, "Job 1 Monthly Income")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_EmpHistMoWage)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_EmpHistJobTitle2, "Job Title 2")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_EmpHistJobTitle2)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_EmpHistEmployer2, "Employer 2")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_EmpHistEmployer2)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_EmpHistCity2, "Employer City 2")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_EmpHistCity2)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_EmpHistJobStart2, "Job 2 Start Date")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_EmpHistJobStart2)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_EmpHistJobEnd2, "Job 2 End Date")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_EmpHistJobEnd2)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_EmpHistMoWage2, "Job 2 Monthly Income")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_EmpHistMoWage2)
+        </dd>
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_EmpHistJobTitle3, "Job Title 3")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_EmpHistJobTitle3)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_EmpHistEmployer3, "Employer 3")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_EmpHistEmployer3)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_EmpHistCity3, "Employer City 3")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_EmpHistCity3)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_EmpHistJobStart3, "Job 3 Start Date")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_EmpHistJobStart3)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_EmpHistJobEnd3, "Job 3 End Date")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_EmpHistJobEnd3)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_EmpHistMoWage3, "Job 3 Monthly Income")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_EmpHistMoWage3)
+        </dd>
+    </dl>
+</div>
+<label class="accordion">Legal</label>
+<div class="panel">
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_LegInfoMisdemeanor, "Misdemeanor Conviction")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_LegInfoMisdemeanor)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_LegInfoFelony, "Felony Conviction")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_LegInfoFelony)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_LegInfoState, "Conviction - State")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_LegInfoState)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_LegInfoCounty, "Conviction - County")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_LegInfoCounty)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_LegInfoCharge_Details, "Recent Charge Details")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_LegInfoCharge_Details)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_LegInfoCharge_Timeframe, "Recent Charge Date(s)")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_LegInfoCharge_Timeframe)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_LegInfoProbation_Status, "Probation Status")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_LegInfoProbation_Status)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_LegInfoProbation_Officer, "Probation Officer")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_LegInfoProbation_Officer)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_LegInfoVetTreatCourt_Status, "Veterans Treatment Court Status")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_LegInfoVetTreatCourt_Status)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_LegInfoVetTreatCourt_Phase, "Veterans Treatment Court Phase")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_LegInfoVetTreatCourt_Phase)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_LegInfoVetTreatCourt_GradStauts, "Veterans Treatment Court Graduation Date")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_LegInfoVetTreatCourt_GradStauts)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_LegInfoLegal_List, "List of Other Criminal Details")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_LegInfoLegal_List)
+        </dd>
+    </dl>
+</div>
+
+<label class="accordion">Agreements and Acknowledgements</label>
+<div class="panel">
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_AppAgree_SignDate1, "Counseling Agreement Signature Date")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_AppAgree_SignDate1)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.AppInfo_AppAgree_SignDate2, "Information Agreement Signature Date")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppInfo_AppAgree_SignDate2)
+        </dd>
+    </dl>
+</div>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <hr>
+    <div class="form-group">
+        <div style="margin-left: auto; margin-right: auto; text-align: center">
+            <input type="submit" value="Delete" class="btn btn-default fsv-btn" /> |
+            @Html.ActionLink("Back to List", "FrontDeskPortal_All")
+        </div>
+    </div>
+        <hr>
+}

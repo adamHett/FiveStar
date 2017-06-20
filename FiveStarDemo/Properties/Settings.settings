@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="FiveStarDemo.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ActiveDBConnection" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Testing</Value>
+    </Setting>
+    <Setting Name="ProductionConnectionString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ProductionConnectionString</Value>
+    </Setting>
+    <Setting Name="TestingConnectionString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Data Source=13.92.47.215; Initial Catalog=FiveStarDB;Persist Security Info=True;User ID=unf2016; Password=unf2016students; MultipleActiveResultSets=True; Application Name=EntityFramework</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

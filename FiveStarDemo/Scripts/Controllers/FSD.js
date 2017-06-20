@@ -1,0 +1,1 @@
+﻿var FSD = angular.module('FSD', ['ui.bootstrap']);

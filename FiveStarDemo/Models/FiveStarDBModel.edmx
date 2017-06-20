@@ -1,0 +1,736 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="FiveStarDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="FiveStarApplicantInformation">
+          <Key>
+            <PropertyRef Name="AppInfo_ID" />
+          </Key>
+          <Property Name="AppInfo_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AppInfo_Status" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="AppInfo_Date" Type="date" Nullable="false" />
+          <Property Name="AppInfo_Type" Type="nvarchar(max)" />
+          <Property Name="AppInfo_SSN" Type="nvarchar(max)" />
+          <Property Name="AppInfo_Fname" Type="nvarchar(max)" />
+          <Property Name="AppInfo_Lname" Type="nvarchar(max)" />
+          <Property Name="AppInfo_DOB" Type="date" />
+          <Property Name="AppInfo_Age" Type="int" />
+          <Property Name="AppInfo_Email" Type="nvarchar(max)" />
+          <Property Name="AppInfo_Phone" Type="nvarchar(max)" />
+          <Property Name="AppInfo_Gender" Type="nvarchar(max)" />
+          <Property Name="AppInfo_Need1" Type="nvarchar(max)" />
+          <Property Name="AppInfo_Need2" Type="nvarchar(max)" />
+          <Property Name="AppInfo_LTGoal" Type="nvarchar(max)" />
+          <Property Name="AppInfo_ReferAgency" Type="nvarchar(max)" />
+          <Property Name="AppInfo_ReferAgent" Type="nvarchar(max)" />
+          <Property Name="AppInfo_NonRefer" Type="nvarchar(max)" />
+          <Property Name="AppInfo_HousingStatus" Type="nvarchar(max)" />
+          <Property Name="AppInfo_Facility" Type="nvarchar(max)" />
+          <Property Name="AppInfo_StayLength" Type="nvarchar(max)" />
+          <Property Name="AppInfo_EContFname" Type="nvarchar(max)" />
+          <Property Name="AppInfo_EContLname" Type="nvarchar(max)" />
+          <Property Name="AppInfo_EContRelation" Type="nvarchar(max)" />
+          <Property Name="AppInfo_EContStAddress" Type="nvarchar(max)" />
+          <Property Name="AppInfo_EContCity" Type="nvarchar(max)" />
+          <Property Name="AppInfo_EContState" Type="nvarchar(max)" />
+          <Property Name="AppInfo_EContZip" Type="nvarchar(max)" />
+          <Property Name="AppInfo_EContPH" Type="nvarchar(max)" />
+          <Property Name="AppInfo_MaritalStatus" Type="nvarchar(max)" />
+          <Property Name="AppInfo_Children" Type="int" />
+          <Property Name="AppInfo_ChildrenMale" Type="int" />
+          <Property Name="AppInfo_ChildrenFem" Type="int" />
+          <Property Name="AppInfo_TrainLevel" Type="nvarchar(max)" />
+          <Property Name="AppInfo_TrainSkills" Type="nvarchar(max)" />
+          <Property Name="AppInfo_MilServDD214" Type="bit" />
+          <Property Name="AppInfo_MilServBranch" Type="nvarchar(max)" />
+          <Property Name="AppInfo_MilServBeginDate" Type="date" />
+          <Property Name="AppInfo_MilServEndDate" Type="date" />
+          <Property Name="AppInfo_MilServDischargeRnk" Type="nvarchar(max)" />
+          <Property Name="AppInfo_MilServMOS" Type="nvarchar(max)" />
+          <Property Name="AppInfo_MilServCombat" Type="nvarchar(max)" />
+          <Property Name="AppInfo_MilServSepCode" Type="nvarchar(max)" />
+          <Property Name="AppInfo_MilServPurpHrt" Type="nvarchar(max)" />
+          <Property Name="AppInfo_MilServTOD" Type="nvarchar(max)" />
+          <Property Name="AppInfo_MilServDischargeStatus" Type="nvarchar(max)" />
+          <Property Name="AppInfo_MoIncServiceDisability" Type="nvarchar(max)" />
+          <Property Name="AppInfo_MoIncSDPercent" Type="nvarchar(max)" />
+          <Property Name="AppInfo_MoIncSDMoAmt" Type="nvarchar(max)" />
+          <Property Name="AppInfo_MoIncCurrEmployed" Type="nvarchar(max)" />
+          <Property Name="AppInfo_MoIncCEMoAmt" Type="nvarchar(max)" />
+          <Property Name="AppInfo_MoIncSSI" Type="nvarchar(max)" />
+          <Property Name="AppInfo_MoIncSSDI" Type="nvarchar(max)" />
+          <Property Name="AppInfo_MoIncFoodStamps" Type="nvarchar(max)" />
+          <Property Name="AppInfo_MoIncOther" Type="nvarchar(max)" />
+          <Property Name="AppInfo_MoIncMoChildSupport" Type="nvarchar(max)" />
+          <Property Name="AppInfo_MoIncTotalMoAmt" Type="nvarchar(max)" />
+          <Property Name="AppInfo_EmpHistJobTitle" Type="nvarchar(max)" />
+          <Property Name="AppInfo_EmpHistEmployer" Type="nvarchar(max)" />
+          <Property Name="AppInfo_EmpHistCity" Type="nvarchar(max)" />
+          <Property Name="AppInfo_EmpHistJobStart" Type="date" />
+          <Property Name="AppInfo_EmpHistJobEnd" Type="date" />
+          <Property Name="AppInfo_EmpHistMoWage" Type="nvarchar(max)" />
+          <Property Name="AppInfo_EmpHistJobTitle2" Type="nvarchar(max)" />
+          <Property Name="AppInfo_EmpHistEmployer2" Type="nvarchar(max)" />
+          <Property Name="AppInfo_EmpHistCity2" Type="nvarchar(max)" />
+          <Property Name="AppInfo_EmpHistJobStart2" Type="date" />
+          <Property Name="AppInfo_EmpHistJobEnd2" Type="date" />
+          <Property Name="AppInfo_EmpHistMoWage2" Type="nvarchar(max)" />
+          <Property Name="AppInfo_EmpHistJobTitle3" Type="nvarchar(max)" />
+          <Property Name="AppInfo_EmpHistEmployer3" Type="nvarchar(max)" />
+          <Property Name="AppInfo_EmpHistCity3" Type="nvarchar(max)" />
+          <Property Name="AppInfo_EmpHistJobStart3" Type="date" />
+          <Property Name="AppInfo_EmpHistJobEnd3" Type="date" />
+          <Property Name="AppInfo_EmpHistMoWage3" Type="nvarchar(max)" />
+          <Property Name="AppInfo_LegInfoMisdemeanor" Type="nvarchar(max)" />
+          <Property Name="AppInfo_LegInfoFelony" Type="nvarchar(max)" />
+          <Property Name="AppInfo_LegInfoState" Type="nvarchar(max)" />
+          <Property Name="AppInfo_LegInfoCounty" Type="nvarchar(max)" />
+          <Property Name="AppInfo_LegInfoCharge_Details" Type="nvarchar(max)" />
+          <Property Name="AppInfo_LegInfoCharge_Timeframe" Type="nvarchar(max)" />
+          <Property Name="AppInfo_LegInfoProbation_Status" Type="nvarchar(max)" />
+          <Property Name="AppInfo_LegInfoProbation_Officer" Type="nvarchar(max)" />
+          <Property Name="AppInfo_LegInfoVetTreatCourt_Status" Type="nvarchar(max)" />
+          <Property Name="AppInfo_LegInfoVetTreatCourt_Phase" Type="nvarchar(max)" />
+          <Property Name="AppInfo_LegInfoVetTreatCourt_GradStauts" Type="nvarchar(max)" />
+          <Property Name="AppInfo_LegInfoLegal_List" Type="nvarchar(max)" />
+          <Property Name="AppInfo_AppAgree_SignDate1" Type="nvarchar(max)" />
+          <Property Name="AppInfo_AppAgree_SignDate2" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="FiveStarApplicantInterviewInformation">
+          <Key>
+            <PropertyRef Name="AppIntInfo_ID" />
+          </Key>
+          <Property Name="AppIntInfo_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AppIntInfo_Date" Type="date" Nullable="false" />
+          <Property Name="AppIntInfo_Status" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="AppIntInfo_SSN" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="AppIntInfo_Fname" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="AppIntInfo_Lname" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="AppIntInfo_DOB" Type="date" Nullable="false" />
+          <Property Name="AppIntInfo_Age" Type="int" />
+          <Property Name="AppIntInfo_MHCurrentHarm" Type="bit" />
+          <Property Name="AppIntInfo_MHPastHarm" Type="bit" />
+          <Property Name="AppIntInfo_MHPastHarm_Details" Type="nvarchar(max)" />
+          <Property Name="AppIntInfo_MHTBI" Type="bit" />
+          <Property Name="AppIntInfo_MHPTS" Type="bit" />
+          <Property Name="AppIntInfo_MHSubAbuse" Type="bit" />
+          <Property Name="AppIntInfo_MHBipoDisorder" Type="bit" />
+          <Property Name="AppIntInfo_MHSchizo" Type="bit" />
+          <Property Name="AppIntInfo_MHDepression" Type="bit" />
+          <Property Name="AppIntInfo_MHAnxiety" Type="bit" />
+          <Property Name="AppIntInfo_MHPersDisorder" Type="bit" />
+          <Property Name="AppIntInfo_MHOther" Type="nvarchar(max)" />
+          <Property Name="AppIntInfo_ASAAlcohol" Type="bit" />
+          <Property Name="AppIntInfo_ASAGambling" Type="bit" />
+          <Property Name="AppIntInfo_ASAPrescriptDrug" Type="bit" />
+          <Property Name="AppIntInfo_ASAStreetDrug" Type="bit" />
+          <Property Name="AppIntInfo_ASATobacco" Type="bit" />
+          <Property Name="AppIntInfo_ASADrugChoice1" Type="nvarchar(max)" />
+          <Property Name="AppIntInfo_ASADrugChoice2" Type="nvarchar(max)" />
+          <Property Name="AppIntInfo_ASADrugChoice3" Type="nvarchar(max)" />
+          <Property Name="AppIntInfo_ASACurrent_TimeSober" Type="nvarchar(max)" />
+          <Property Name="AppIntInfo_ASAPast_TimeSober" Type="nvarchar(max)" />
+          <Property Name="AppIntInfo_ASADUI_DWI" Type="bit" />
+          <Property Name="AppIntInfo_ASAPossess_Conviction" Type="bit" />
+          <Property Name="AppIntInfo_ASASell_Conviction" Type="bit" />
+          <Property Name="AppIntInfo_PHPCP_Fname" Type="nvarchar(max)" />
+          <Property Name="AppIntInfo_PHPCP_Lname" Type="nvarchar(max)" />
+          <Property Name="AppIntInfo_PHPCP_Phone" Type="nvarchar(max)" />
+          <Property Name="AppIntInfo_PHPCP_StAddress" Type="nvarchar(max)" />
+          <Property Name="AppIntInfo_PHPCP_City" Type="nvarchar(max)" />
+          <Property Name="AppIntInfo_PHPCP_State" Type="nvarchar(max)" />
+          <Property Name="AppIntInfo_PHPCP_Zip" Type="nvarchar(max)" />
+          <Property Name="AppIntInfo_PHPCP_ContactOK" Type="bit" />
+          <Property Name="AppIntInfo_PHSeizures" Type="bit" />
+          <Property Name="AppIntInfo_PHAllergies" Type="nvarchar(max)" />
+          <Property Name="AppIntInfo_PHOther" Type="nvarchar(max)" />
+          <Property Name="AppIntInfo_MedsCondition1" Type="nvarchar(max)" />
+          <Property Name="AppIntInfo_MedsMedication1" Type="nvarchar(max)" />
+          <Property Name="AppIntInfo_MedsDosage1" Type="nvarchar(max)" />
+          <Property Name="AppIntInfo_MedsFrequency1" Type="nvarchar(max)" />
+          <Property Name="AppIntInfo_MedsCondition2" Type="nvarchar(max)" />
+          <Property Name="AppIntInfo_MedsMedication2" Type="nvarchar(max)" />
+          <Property Name="AppIntInfo_MedsDosage2" Type="nvarchar(max)" />
+          <Property Name="AppIntInfo_MedsFrequency2" Type="nvarchar(max)" />
+          <Property Name="AppIntInfo_MedsCondition3" Type="nvarchar(max)" />
+          <Property Name="AppIntInfo_MedsMedication3" Type="nvarchar(max)" />
+          <Property Name="AppIntInfo_MedsDosage3" Type="nvarchar(max)" />
+          <Property Name="AppIntInfo_MedsFrequency3" Type="nvarchar(max)" />
+          <Property Name="AppIntInfo_MedsCondition4" Type="nvarchar(max)" />
+          <Property Name="AppIntInfo_MedsMedication4" Type="nvarchar(max)" />
+          <Property Name="AppIntInfo_MedsDosage4" Type="nvarchar(max)" />
+          <Property Name="AppIntInfo_MedsFrequency4" Type="nvarchar(max)" />
+          <Property Name="AppIntInfo_MedsCondition5" Type="nvarchar(max)" />
+          <Property Name="AppIntInfo_MedsMedication5" Type="nvarchar(max)" />
+          <Property Name="AppIntInfo_MedsDosage5" Type="nvarchar(max)" />
+          <Property Name="AppIntInfo_MedsFrequency5" Type="nvarchar(max)" />
+          <Property Name="AppIntInfo_MedsOther" Type="nvarchar(max)" />
+          <Property Name="AppIntInfo_AgreeSignDate" Type="date" />
+          <Property Name="AppInfo_ID" Type="int" />
+        </EntityType>
+        <EntityType Name="FiveStarResidentInformation">
+          <Key>
+            <PropertyRef Name="ResInfo_ID" />
+          </Key>
+          <Property Name="ResInfo_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ResInfo_Status" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="ResInfo_AcceptDate" Type="date" Nullable="false" />
+          <Property Name="ResInfo_DeclineDate" Type="date" />
+          <Property Name="ResInfo_RoomID" Type="int" Nullable="false" />
+          <Property Name="ResInfo_DD214" Type="bit" Nullable="false" />
+          <Property Name="ResInfo_TBTest" Type="bit" Nullable="false" />
+          <Property Name="ResInfo_PhotoID" Type="bit" Nullable="false" />
+          <Property Name="ResInfo_HUDVASH_Vouch" Type="bit" Nullable="false" />
+          <Property Name="ResInfo_BackCheck" Type="bit" Nullable="false" />
+          <Property Name="ResInfo_CommRecomendation" Type="nvarchar(max)" />
+          <Property Name="ResInfo_SSN" Type="nvarchar(max)" />
+          <Property Name="ResInfo_Fname" Type="nvarchar(max)" />
+          <Property Name="ResInfo_Lname" Type="nvarchar(max)" />
+          <Property Name="ResInfo_DOB" Type="date" />
+          <Property Name="ResInfo_Age" Type="int" />
+          <Property Name="ResInfo_Phone" Type="nvarchar(max)" />
+          <Property Name="ResInfo_Gender" Type="nvarchar(max)" />
+          <Property Name="AppInfo_ID" Type="int" Nullable="false" />
+          <Property Name="ResInfo_ExitDate" Type="date" />
+          <Property Name="ResInfo_ExitSummary" Type="nvarchar(max)" />
+          <Property Name="AppIntInfo_ID" Type="int" />
+        </EntityType>
+        <Association Name="FK_FiveStarApplicantInterviewInformation_ToTable">
+          <End Role="FiveStarApplicantInformation" Type="Self.FiveStarApplicantInformation" Multiplicity="0..1" />
+          <End Role="FiveStarApplicantInterviewInformation" Type="Self.FiveStarApplicantInterviewInformation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FiveStarApplicantInformation">
+              <PropertyRef Name="AppInfo_ID" />
+            </Principal>
+            <Dependent Role="FiveStarApplicantInterviewInformation">
+              <PropertyRef Name="AppInfo_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_FiveStarResidentInformation_ToTable">
+          <End Role="FiveStarApplicantInformation" Type="Self.FiveStarApplicantInformation" Multiplicity="1" />
+          <End Role="FiveStarResidentInformation" Type="Self.FiveStarResidentInformation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FiveStarApplicantInformation">
+              <PropertyRef Name="AppInfo_ID" />
+            </Principal>
+            <Dependent Role="FiveStarResidentInformation">
+              <PropertyRef Name="AppInfo_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_FiveStarResidentInformation_ToTable1">
+          <End Role="FiveStarApplicantInterviewInformation" Type="Self.FiveStarApplicantInterviewInformation" Multiplicity="0..1" />
+          <End Role="FiveStarResidentInformation" Type="Self.FiveStarResidentInformation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FiveStarApplicantInterviewInformation">
+              <PropertyRef Name="AppIntInfo_ID" />
+            </Principal>
+            <Dependent Role="FiveStarResidentInformation">
+              <PropertyRef Name="AppIntInfo_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="FiveStarDBModelStoreContainer">
+          <EntitySet Name="FiveStarApplicantInformation" EntityType="Self.FiveStarApplicantInformation" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="FiveStarApplicantInterviewInformation" EntityType="Self.FiveStarApplicantInterviewInformation" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="FiveStarResidentInformation" EntityType="Self.FiveStarResidentInformation" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_FiveStarApplicantInterviewInformation_ToTable" Association="Self.FK_FiveStarApplicantInterviewInformation_ToTable">
+            <End Role="FiveStarApplicantInformation" EntitySet="FiveStarApplicantInformation" />
+            <End Role="FiveStarApplicantInterviewInformation" EntitySet="FiveStarApplicantInterviewInformation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_FiveStarResidentInformation_ToTable" Association="Self.FK_FiveStarResidentInformation_ToTable">
+            <End Role="FiveStarApplicantInformation" EntitySet="FiveStarApplicantInformation" />
+            <End Role="FiveStarResidentInformation" EntitySet="FiveStarResidentInformation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_FiveStarResidentInformation_ToTable1" Association="Self.FK_FiveStarResidentInformation_ToTable1">
+            <End Role="FiveStarApplicantInterviewInformation" EntitySet="FiveStarApplicantInterviewInformation" />
+            <End Role="FiveStarResidentInformation" EntitySet="FiveStarResidentInformation" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="FiveStarDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="FiveStarApplicantInformation">
+          <Key>
+            <PropertyRef Name="AppInfo_ID" />
+          </Key>
+          <Property Name="AppInfo_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AppInfo_Status" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="AppInfo_Date" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="AppInfo_Type" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_SSN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_Fname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_Lname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_DOB" Type="DateTime" Precision="0" />
+          <Property Name="AppInfo_Age" Type="Int32" />
+          <Property Name="AppInfo_Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_Phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_Gender" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_Need1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_Need2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_LTGoal" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_ReferAgency" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_ReferAgent" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_NonRefer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_HousingStatus" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_Facility" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_StayLength" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_EContFname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_EContLname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_EContRelation" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_EContStAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_EContCity" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_EContState" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_EContZip" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_EContPH" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_MaritalStatus" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_Children" Type="Int32" />
+          <Property Name="AppInfo_ChildrenMale" Type="Int32" />
+          <Property Name="AppInfo_ChildrenFem" Type="Int32" />
+          <Property Name="AppInfo_TrainLevel" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_TrainSkills" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_MilServDD214" Type="Boolean" />
+          <Property Name="AppInfo_MilServBranch" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_MilServBeginDate" Type="DateTime" Precision="0" />
+          <Property Name="AppInfo_MilServEndDate" Type="DateTime" Precision="0" />
+          <Property Name="AppInfo_MilServDischargeRnk" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_MilServMOS" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_MilServCombat" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_MilServSepCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_MilServPurpHrt" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_MilServTOD" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_MilServDischargeStatus" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_MoIncServiceDisability" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_MoIncSDPercent" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_MoIncSDMoAmt" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_MoIncCurrEmployed" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_MoIncCEMoAmt" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_MoIncSSI" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_MoIncSSDI" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_MoIncFoodStamps" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_MoIncOther" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_MoIncMoChildSupport" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_MoIncTotalMoAmt" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_EmpHistJobTitle" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_EmpHistEmployer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_EmpHistCity" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_EmpHistJobStart" Type="DateTime" Precision="0" />
+          <Property Name="AppInfo_EmpHistJobEnd" Type="DateTime" Precision="0" />
+          <Property Name="AppInfo_EmpHistMoWage" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_EmpHistJobTitle2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_EmpHistEmployer2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_EmpHistCity2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_EmpHistJobStart2" Type="DateTime" Precision="0" />
+          <Property Name="AppInfo_EmpHistJobEnd2" Type="DateTime" Precision="0" />
+          <Property Name="AppInfo_EmpHistMoWage2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_EmpHistJobTitle3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_EmpHistEmployer3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_EmpHistCity3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_EmpHistJobStart3" Type="DateTime" Precision="0" />
+          <Property Name="AppInfo_EmpHistJobEnd3" Type="DateTime" Precision="0" />
+          <Property Name="AppInfo_EmpHistMoWage3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_LegInfoMisdemeanor" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_LegInfoFelony" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_LegInfoState" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_LegInfoCounty" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_LegInfoCharge_Details" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_LegInfoCharge_Timeframe" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_LegInfoProbation_Status" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_LegInfoProbation_Officer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_LegInfoVetTreatCourt_Status" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_LegInfoVetTreatCourt_Phase" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_LegInfoVetTreatCourt_GradStauts" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_LegInfoLegal_List" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_AppAgree_SignDate1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_AppAgree_SignDate2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="FiveStarApplicantInterviewInformation" Relationship="Self.FK_FiveStarApplicantInterviewInformation_ToTable" FromRole="FiveStarApplicantInformation" ToRole="FiveStarApplicantInterviewInformation" />
+          <NavigationProperty Name="FiveStarResidentInformation" Relationship="Self.FK_FiveStarResidentInformation_ToTable" FromRole="FiveStarApplicantInformation" ToRole="FiveStarResidentInformation" />
+        </EntityType>
+        <EntityType Name="FiveStarApplicantInterviewInformation">
+          <Key>
+            <PropertyRef Name="AppIntInfo_ID" />
+          </Key>
+          <Property Name="AppIntInfo_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AppIntInfo_Date" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="AppIntInfo_Status" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="AppIntInfo_SSN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="AppIntInfo_Fname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="AppIntInfo_Lname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="AppIntInfo_DOB" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="AppIntInfo_Age" Type="Int32" />
+          <Property Name="AppIntInfo_MHCurrentHarm" Type="Boolean" />
+          <Property Name="AppIntInfo_MHPastHarm" Type="Boolean" />
+          <Property Name="AppIntInfo_MHPastHarm_Details" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppIntInfo_MHTBI" Type="Boolean" />
+          <Property Name="AppIntInfo_MHPTS" Type="Boolean" />
+          <Property Name="AppIntInfo_MHSubAbuse" Type="Boolean" />
+          <Property Name="AppIntInfo_MHBipoDisorder" Type="Boolean" />
+          <Property Name="AppIntInfo_MHSchizo" Type="Boolean" />
+          <Property Name="AppIntInfo_MHDepression" Type="Boolean" />
+          <Property Name="AppIntInfo_MHAnxiety" Type="Boolean" />
+          <Property Name="AppIntInfo_MHPersDisorder" Type="Boolean" />
+          <Property Name="AppIntInfo_MHOther" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppIntInfo_ASAAlcohol" Type="Boolean" />
+          <Property Name="AppIntInfo_ASAGambling" Type="Boolean" />
+          <Property Name="AppIntInfo_ASAPrescriptDrug" Type="Boolean" />
+          <Property Name="AppIntInfo_ASAStreetDrug" Type="Boolean" />
+          <Property Name="AppIntInfo_ASATobacco" Type="Boolean" />
+          <Property Name="AppIntInfo_ASADrugChoice1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppIntInfo_ASADrugChoice2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppIntInfo_ASADrugChoice3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppIntInfo_ASACurrent_TimeSober" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppIntInfo_ASAPast_TimeSober" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppIntInfo_ASADUI_DWI" Type="Boolean" />
+          <Property Name="AppIntInfo_ASAPossess_Conviction" Type="Boolean" />
+          <Property Name="AppIntInfo_ASASell_Conviction" Type="Boolean" />
+          <Property Name="AppIntInfo_PHPCP_Fname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppIntInfo_PHPCP_Lname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppIntInfo_PHPCP_Phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppIntInfo_PHPCP_StAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppIntInfo_PHPCP_City" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppIntInfo_PHPCP_State" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppIntInfo_PHPCP_Zip" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppIntInfo_PHPCP_ContactOK" Type="Boolean" />
+          <Property Name="AppIntInfo_PHSeizures" Type="Boolean" />
+          <Property Name="AppIntInfo_PHAllergies" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppIntInfo_PHOther" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppIntInfo_MedsCondition1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppIntInfo_MedsMedication1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppIntInfo_MedsDosage1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppIntInfo_MedsFrequency1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppIntInfo_MedsCondition2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppIntInfo_MedsMedication2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppIntInfo_MedsDosage2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppIntInfo_MedsFrequency2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppIntInfo_MedsCondition3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppIntInfo_MedsMedication3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppIntInfo_MedsDosage3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppIntInfo_MedsFrequency3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppIntInfo_MedsCondition4" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppIntInfo_MedsMedication4" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppIntInfo_MedsDosage4" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppIntInfo_MedsFrequency4" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppIntInfo_MedsCondition5" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppIntInfo_MedsMedication5" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppIntInfo_MedsDosage5" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppIntInfo_MedsFrequency5" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppIntInfo_MedsOther" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppIntInfo_AgreeSignDate" Type="DateTime" Precision="0" />
+          <Property Name="AppInfo_ID" Type="Int32" />
+          <NavigationProperty Name="FiveStarApplicantInformation" Relationship="Self.FK_FiveStarApplicantInterviewInformation_ToTable" FromRole="FiveStarApplicantInterviewInformation" ToRole="FiveStarApplicantInformation" />
+          <NavigationProperty Name="FiveStarResidentInformation" Relationship="Self.FK_FiveStarResidentInformation_ToTable1" FromRole="FiveStarApplicantInterviewInformation" ToRole="FiveStarResidentInformation" />
+        </EntityType>
+        <EntityType Name="FiveStarResidentInformation">
+          <Key>
+            <PropertyRef Name="ResInfo_ID" />
+          </Key>
+          <Property Name="ResInfo_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ResInfo_Status" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ResInfo_AcceptDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="ResInfo_DeclineDate" Type="DateTime" Precision="0" />
+          <Property Name="ResInfo_RoomID" Type="Int32" Nullable="false" />
+          <Property Name="ResInfo_DD214" Type="Boolean" Nullable="false" />
+          <Property Name="ResInfo_TBTest" Type="Boolean" Nullable="false" />
+          <Property Name="ResInfo_PhotoID" Type="Boolean" Nullable="false" />
+          <Property Name="ResInfo_HUDVASH_Vouch" Type="Boolean" Nullable="false" />
+          <Property Name="ResInfo_BackCheck" Type="Boolean" Nullable="false" />
+          <Property Name="ResInfo_CommRecomendation" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ResInfo_SSN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ResInfo_Fname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ResInfo_Lname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ResInfo_DOB" Type="DateTime" Precision="0" />
+          <Property Name="ResInfo_Age" Type="Int32" />
+          <Property Name="ResInfo_Phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ResInfo_Gender" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppInfo_ID" Type="Int32" Nullable="false" />
+          <Property Name="ResInfo_ExitDate" Type="DateTime" Precision="0" />
+          <Property Name="ResInfo_ExitSummary" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AppIntInfo_ID" Type="Int32" />
+          <NavigationProperty Name="FiveStarApplicantInformation" Relationship="Self.FK_FiveStarResidentInformation_ToTable" FromRole="FiveStarResidentInformation" ToRole="FiveStarApplicantInformation" />
+          <NavigationProperty Name="FiveStarApplicantInterviewInformation" Relationship="Self.FK_FiveStarResidentInformation_ToTable1" FromRole="FiveStarResidentInformation" ToRole="FiveStarApplicantInterviewInformation" />
+        </EntityType>
+        <Association Name="FK_FiveStarApplicantInterviewInformation_ToTable">
+          <End Role="FiveStarApplicantInformation" Type="Self.FiveStarApplicantInformation" Multiplicity="0..1" />
+          <End Role="FiveStarApplicantInterviewInformation" Type="Self.FiveStarApplicantInterviewInformation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FiveStarApplicantInformation">
+              <PropertyRef Name="AppInfo_ID" />
+            </Principal>
+            <Dependent Role="FiveStarApplicantInterviewInformation">
+              <PropertyRef Name="AppInfo_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_FiveStarResidentInformation_ToTable">
+          <End Role="FiveStarApplicantInformation" Type="Self.FiveStarApplicantInformation" Multiplicity="1" />
+          <End Role="FiveStarResidentInformation" Type="Self.FiveStarResidentInformation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FiveStarApplicantInformation">
+              <PropertyRef Name="AppInfo_ID" />
+            </Principal>
+            <Dependent Role="FiveStarResidentInformation">
+              <PropertyRef Name="AppInfo_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_FiveStarResidentInformation_ToTable1">
+          <End Role="FiveStarApplicantInterviewInformation" Type="Self.FiveStarApplicantInterviewInformation" Multiplicity="0..1" />
+          <End Role="FiveStarResidentInformation" Type="Self.FiveStarResidentInformation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FiveStarApplicantInterviewInformation">
+              <PropertyRef Name="AppIntInfo_ID" />
+            </Principal>
+            <Dependent Role="FiveStarResidentInformation">
+              <PropertyRef Name="AppIntInfo_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="FiveStarDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="FiveStarApplicantInformation" EntityType="Self.FiveStarApplicantInformation" />
+          <EntitySet Name="FiveStarApplicantInterviewInformation" EntityType="Self.FiveStarApplicantInterviewInformation" />
+          <EntitySet Name="FiveStarResidentInformation" EntityType="Self.FiveStarResidentInformation" />
+          <AssociationSet Name="FK_FiveStarApplicantInterviewInformation_ToTable" Association="Self.FK_FiveStarApplicantInterviewInformation_ToTable">
+            <End Role="FiveStarApplicantInformation" EntitySet="FiveStarApplicantInformation" />
+            <End Role="FiveStarApplicantInterviewInformation" EntitySet="FiveStarApplicantInterviewInformation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_FiveStarResidentInformation_ToTable" Association="Self.FK_FiveStarResidentInformation_ToTable">
+            <End Role="FiveStarApplicantInformation" EntitySet="FiveStarApplicantInformation" />
+            <End Role="FiveStarResidentInformation" EntitySet="FiveStarResidentInformation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_FiveStarResidentInformation_ToTable1" Association="Self.FK_FiveStarResidentInformation_ToTable1">
+            <End Role="FiveStarApplicantInterviewInformation" EntitySet="FiveStarApplicantInterviewInformation" />
+            <End Role="FiveStarResidentInformation" EntitySet="FiveStarResidentInformation" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="FiveStarDBModelStoreContainer" CdmEntityContainer="FiveStarDBEntities">
+          <EntitySetMapping Name="FiveStarApplicantInformation">
+            <EntityTypeMapping TypeName="FiveStarDBModel.FiveStarApplicantInformation">
+              <MappingFragment StoreEntitySet="FiveStarApplicantInformation">
+                <ScalarProperty Name="AppInfo_ID" ColumnName="AppInfo_ID" />
+                <ScalarProperty Name="AppInfo_Status" ColumnName="AppInfo_Status" />
+                <ScalarProperty Name="AppInfo_Date" ColumnName="AppInfo_Date" />
+                <ScalarProperty Name="AppInfo_Type" ColumnName="AppInfo_Type" />
+                <ScalarProperty Name="AppInfo_SSN" ColumnName="AppInfo_SSN" />
+                <ScalarProperty Name="AppInfo_Fname" ColumnName="AppInfo_Fname" />
+                <ScalarProperty Name="AppInfo_Lname" ColumnName="AppInfo_Lname" />
+                <ScalarProperty Name="AppInfo_DOB" ColumnName="AppInfo_DOB" />
+                <ScalarProperty Name="AppInfo_Age" ColumnName="AppInfo_Age" />
+                <ScalarProperty Name="AppInfo_Email" ColumnName="AppInfo_Email" />
+                <ScalarProperty Name="AppInfo_Phone" ColumnName="AppInfo_Phone" />
+                <ScalarProperty Name="AppInfo_Gender" ColumnName="AppInfo_Gender" />
+                <ScalarProperty Name="AppInfo_Need1" ColumnName="AppInfo_Need1" />
+                <ScalarProperty Name="AppInfo_Need2" ColumnName="AppInfo_Need2" />
+                <ScalarProperty Name="AppInfo_LTGoal" ColumnName="AppInfo_LTGoal" />
+                <ScalarProperty Name="AppInfo_ReferAgency" ColumnName="AppInfo_ReferAgency" />
+                <ScalarProperty Name="AppInfo_ReferAgent" ColumnName="AppInfo_ReferAgent" />
+                <ScalarProperty Name="AppInfo_NonRefer" ColumnName="AppInfo_NonRefer" />
+                <ScalarProperty Name="AppInfo_HousingStatus" ColumnName="AppInfo_HousingStatus" />
+                <ScalarProperty Name="AppInfo_Facility" ColumnName="AppInfo_Facility" />
+                <ScalarProperty Name="AppInfo_StayLength" ColumnName="AppInfo_StayLength" />
+                <ScalarProperty Name="AppInfo_EContFname" ColumnName="AppInfo_EContFname" />
+                <ScalarProperty Name="AppInfo_EContLname" ColumnName="AppInfo_EContLname" />
+                <ScalarProperty Name="AppInfo_EContRelation" ColumnName="AppInfo_EContRelation" />
+                <ScalarProperty Name="AppInfo_EContStAddress" ColumnName="AppInfo_EContStAddress" />
+                <ScalarProperty Name="AppInfo_EContCity" ColumnName="AppInfo_EContCity" />
+                <ScalarProperty Name="AppInfo_EContState" ColumnName="AppInfo_EContState" />
+                <ScalarProperty Name="AppInfo_EContZip" ColumnName="AppInfo_EContZip" />
+                <ScalarProperty Name="AppInfo_EContPH" ColumnName="AppInfo_EContPH" />
+                <ScalarProperty Name="AppInfo_MaritalStatus" ColumnName="AppInfo_MaritalStatus" />
+                <ScalarProperty Name="AppInfo_Children" ColumnName="AppInfo_Children" />
+                <ScalarProperty Name="AppInfo_ChildrenMale" ColumnName="AppInfo_ChildrenMale" />
+                <ScalarProperty Name="AppInfo_ChildrenFem" ColumnName="AppInfo_ChildrenFem" />
+                <ScalarProperty Name="AppInfo_TrainLevel" ColumnName="AppInfo_TrainLevel" />
+                <ScalarProperty Name="AppInfo_TrainSkills" ColumnName="AppInfo_TrainSkills" />
+                <ScalarProperty Name="AppInfo_MilServDD214" ColumnName="AppInfo_MilServDD214" />
+                <ScalarProperty Name="AppInfo_MilServBranch" ColumnName="AppInfo_MilServBranch" />
+                <ScalarProperty Name="AppInfo_MilServBeginDate" ColumnName="AppInfo_MilServBeginDate" />
+                <ScalarProperty Name="AppInfo_MilServEndDate" ColumnName="AppInfo_MilServEndDate" />
+                <ScalarProperty Name="AppInfo_MilServDischargeRnk" ColumnName="AppInfo_MilServDischargeRnk" />
+                <ScalarProperty Name="AppInfo_MilServMOS" ColumnName="AppInfo_MilServMOS" />
+                <ScalarProperty Name="AppInfo_MilServCombat" ColumnName="AppInfo_MilServCombat" />
+                <ScalarProperty Name="AppInfo_MilServSepCode" ColumnName="AppInfo_MilServSepCode" />
+                <ScalarProperty Name="AppInfo_MilServPurpHrt" ColumnName="AppInfo_MilServPurpHrt" />
+                <ScalarProperty Name="AppInfo_MilServTOD" ColumnName="AppInfo_MilServTOD" />
+                <ScalarProperty Name="AppInfo_MilServDischargeStatus" ColumnName="AppInfo_MilServDischargeStatus" />
+                <ScalarProperty Name="AppInfo_MoIncServiceDisability" ColumnName="AppInfo_MoIncServiceDisability" />
+                <ScalarProperty Name="AppInfo_MoIncSDPercent" ColumnName="AppInfo_MoIncSDPercent" />
+                <ScalarProperty Name="AppInfo_MoIncSDMoAmt" ColumnName="AppInfo_MoIncSDMoAmt" />
+                <ScalarProperty Name="AppInfo_MoIncCurrEmployed" ColumnName="AppInfo_MoIncCurrEmployed" />
+                <ScalarProperty Name="AppInfo_MoIncCEMoAmt" ColumnName="AppInfo_MoIncCEMoAmt" />
+                <ScalarProperty Name="AppInfo_MoIncSSI" ColumnName="AppInfo_MoIncSSI" />
+                <ScalarProperty Name="AppInfo_MoIncSSDI" ColumnName="AppInfo_MoIncSSDI" />
+                <ScalarProperty Name="AppInfo_MoIncFoodStamps" ColumnName="AppInfo_MoIncFoodStamps" />
+                <ScalarProperty Name="AppInfo_MoIncOther" ColumnName="AppInfo_MoIncOther" />
+                <ScalarProperty Name="AppInfo_MoIncMoChildSupport" ColumnName="AppInfo_MoIncMoChildSupport" />
+                <ScalarProperty Name="AppInfo_MoIncTotalMoAmt" ColumnName="AppInfo_MoIncTotalMoAmt" />
+                <ScalarProperty Name="AppInfo_EmpHistJobTitle" ColumnName="AppInfo_EmpHistJobTitle" />
+                <ScalarProperty Name="AppInfo_EmpHistEmployer" ColumnName="AppInfo_EmpHistEmployer" />
+                <ScalarProperty Name="AppInfo_EmpHistCity" ColumnName="AppInfo_EmpHistCity" />
+                <ScalarProperty Name="AppInfo_EmpHistJobStart" ColumnName="AppInfo_EmpHistJobStart" />
+                <ScalarProperty Name="AppInfo_EmpHistJobEnd" ColumnName="AppInfo_EmpHistJobEnd" />
+                <ScalarProperty Name="AppInfo_EmpHistMoWage" ColumnName="AppInfo_EmpHistMoWage" />
+                <ScalarProperty Name="AppInfo_EmpHistJobTitle2" ColumnName="AppInfo_EmpHistJobTitle2" />
+                <ScalarProperty Name="AppInfo_EmpHistEmployer2" ColumnName="AppInfo_EmpHistEmployer2" />
+                <ScalarProperty Name="AppInfo_EmpHistCity2" ColumnName="AppInfo_EmpHistCity2" />
+                <ScalarProperty Name="AppInfo_EmpHistJobStart2" ColumnName="AppInfo_EmpHistJobStart2" />
+                <ScalarProperty Name="AppInfo_EmpHistJobEnd2" ColumnName="AppInfo_EmpHistJobEnd2" />
+                <ScalarProperty Name="AppInfo_EmpHistMoWage2" ColumnName="AppInfo_EmpHistMoWage2" />
+                <ScalarProperty Name="AppInfo_EmpHistJobTitle3" ColumnName="AppInfo_EmpHistJobTitle3" />
+                <ScalarProperty Name="AppInfo_EmpHistEmployer3" ColumnName="AppInfo_EmpHistEmployer3" />
+                <ScalarProperty Name="AppInfo_EmpHistCity3" ColumnName="AppInfo_EmpHistCity3" />
+                <ScalarProperty Name="AppInfo_EmpHistJobStart3" ColumnName="AppInfo_EmpHistJobStart3" />
+                <ScalarProperty Name="AppInfo_EmpHistJobEnd3" ColumnName="AppInfo_EmpHistJobEnd3" />
+                <ScalarProperty Name="AppInfo_EmpHistMoWage3" ColumnName="AppInfo_EmpHistMoWage3" />
+                <ScalarProperty Name="AppInfo_LegInfoMisdemeanor" ColumnName="AppInfo_LegInfoMisdemeanor" />
+                <ScalarProperty Name="AppInfo_LegInfoFelony" ColumnName="AppInfo_LegInfoFelony" />
+                <ScalarProperty Name="AppInfo_LegInfoState" ColumnName="AppInfo_LegInfoState" />
+                <ScalarProperty Name="AppInfo_LegInfoCounty" ColumnName="AppInfo_LegInfoCounty" />
+                <ScalarProperty Name="AppInfo_LegInfoCharge_Details" ColumnName="AppInfo_LegInfoCharge_Details" />
+                <ScalarProperty Name="AppInfo_LegInfoCharge_Timeframe" ColumnName="AppInfo_LegInfoCharge_Timeframe" />
+                <ScalarProperty Name="AppInfo_LegInfoProbation_Status" ColumnName="AppInfo_LegInfoProbation_Status" />
+                <ScalarProperty Name="AppInfo_LegInfoProbation_Officer" ColumnName="AppInfo_LegInfoProbation_Officer" />
+                <ScalarProperty Name="AppInfo_LegInfoVetTreatCourt_Status" ColumnName="AppInfo_LegInfoVetTreatCourt_Status" />
+                <ScalarProperty Name="AppInfo_LegInfoVetTreatCourt_Phase" ColumnName="AppInfo_LegInfoVetTreatCourt_Phase" />
+                <ScalarProperty Name="AppInfo_LegInfoVetTreatCourt_GradStauts" ColumnName="AppInfo_LegInfoVetTreatCourt_GradStauts" />
+                <ScalarProperty Name="AppInfo_LegInfoLegal_List" ColumnName="AppInfo_LegInfoLegal_List" />
+                <ScalarProperty Name="AppInfo_AppAgree_SignDate1" ColumnName="AppInfo_AppAgree_SignDate1" />
+                <ScalarProperty Name="AppInfo_AppAgree_SignDate2" ColumnName="AppInfo_AppAgree_SignDate2" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FiveStarApplicantInterviewInformation">
+            <EntityTypeMapping TypeName="FiveStarDBModel.FiveStarApplicantInterviewInformation">
+              <MappingFragment StoreEntitySet="FiveStarApplicantInterviewInformation">
+                <ScalarProperty Name="AppIntInfo_ID" ColumnName="AppIntInfo_ID" />
+                <ScalarProperty Name="AppIntInfo_Date" ColumnName="AppIntInfo_Date" />
+                <ScalarProperty Name="AppIntInfo_Status" ColumnName="AppIntInfo_Status" />
+                <ScalarProperty Name="AppIntInfo_SSN" ColumnName="AppIntInfo_SSN" />
+                <ScalarProperty Name="AppIntInfo_Fname" ColumnName="AppIntInfo_Fname" />
+                <ScalarProperty Name="AppIntInfo_Lname" ColumnName="AppIntInfo_Lname" />
+                <ScalarProperty Name="AppIntInfo_DOB" ColumnName="AppIntInfo_DOB" />
+                <ScalarProperty Name="AppIntInfo_Age" ColumnName="AppIntInfo_Age" />
+                <ScalarProperty Name="AppIntInfo_MHCurrentHarm" ColumnName="AppIntInfo_MHCurrentHarm" />
+                <ScalarProperty Name="AppIntInfo_MHPastHarm" ColumnName="AppIntInfo_MHPastHarm" />
+                <ScalarProperty Name="AppIntInfo_MHPastHarm_Details" ColumnName="AppIntInfo_MHPastHarm_Details" />
+                <ScalarProperty Name="AppIntInfo_MHTBI" ColumnName="AppIntInfo_MHTBI" />
+                <ScalarProperty Name="AppIntInfo_MHPTS" ColumnName="AppIntInfo_MHPTS" />
+                <ScalarProperty Name="AppIntInfo_MHSubAbuse" ColumnName="AppIntInfo_MHSubAbuse" />
+                <ScalarProperty Name="AppIntInfo_MHBipoDisorder" ColumnName="AppIntInfo_MHBipoDisorder" />
+                <ScalarProperty Name="AppIntInfo_MHSchizo" ColumnName="AppIntInfo_MHSchizo" />
+                <ScalarProperty Name="AppIntInfo_MHDepression" ColumnName="AppIntInfo_MHDepression" />
+                <ScalarProperty Name="AppIntInfo_MHAnxiety" ColumnName="AppIntInfo_MHAnxiety" />
+                <ScalarProperty Name="AppIntInfo_MHPersDisorder" ColumnName="AppIntInfo_MHPersDisorder" />
+                <ScalarProperty Name="AppIntInfo_MHOther" ColumnName="AppIntInfo_MHOther" />
+                <ScalarProperty Name="AppIntInfo_ASAAlcohol" ColumnName="AppIntInfo_ASAAlcohol" />
+                <ScalarProperty Name="AppIntInfo_ASAGambling" ColumnName="AppIntInfo_ASAGambling" />
+                <ScalarProperty Name="AppIntInfo_ASAPrescriptDrug" ColumnName="AppIntInfo_ASAPrescriptDrug" />
+                <ScalarProperty Name="AppIntInfo_ASAStreetDrug" ColumnName="AppIntInfo_ASAStreetDrug" />
+                <ScalarProperty Name="AppIntInfo_ASATobacco" ColumnName="AppIntInfo_ASATobacco" />
+                <ScalarProperty Name="AppIntInfo_ASADrugChoice1" ColumnName="AppIntInfo_ASADrugChoice1" />
+                <ScalarProperty Name="AppIntInfo_ASADrugChoice2" ColumnName="AppIntInfo_ASADrugChoice2" />
+                <ScalarProperty Name="AppIntInfo_ASADrugChoice3" ColumnName="AppIntInfo_ASADrugChoice3" />
+                <ScalarProperty Name="AppIntInfo_ASACurrent_TimeSober" ColumnName="AppIntInfo_ASACurrent_TimeSober" />
+                <ScalarProperty Name="AppIntInfo_ASAPast_TimeSober" ColumnName="AppIntInfo_ASAPast_TimeSober" />
+                <ScalarProperty Name="AppIntInfo_ASADUI_DWI" ColumnName="AppIntInfo_ASADUI_DWI" />
+                <ScalarProperty Name="AppIntInfo_ASAPossess_Conviction" ColumnName="AppIntInfo_ASAPossess_Conviction" />
+                <ScalarProperty Name="AppIntInfo_ASASell_Conviction" ColumnName="AppIntInfo_ASASell_Conviction" />
+                <ScalarProperty Name="AppIntInfo_PHPCP_Fname" ColumnName="AppIntInfo_PHPCP_Fname" />
+                <ScalarProperty Name="AppIntInfo_PHPCP_Lname" ColumnName="AppIntInfo_PHPCP_Lname" />
+                <ScalarProperty Name="AppIntInfo_PHPCP_Phone" ColumnName="AppIntInfo_PHPCP_Phone" />
+                <ScalarProperty Name="AppIntInfo_PHPCP_StAddress" ColumnName="AppIntInfo_PHPCP_StAddress" />
+                <ScalarProperty Name="AppIntInfo_PHPCP_City" ColumnName="AppIntInfo_PHPCP_City" />
+                <ScalarProperty Name="AppIntInfo_PHPCP_State" ColumnName="AppIntInfo_PHPCP_State" />
+                <ScalarProperty Name="AppIntInfo_PHPCP_Zip" ColumnName="AppIntInfo_PHPCP_Zip" />
+                <ScalarProperty Name="AppIntInfo_PHPCP_ContactOK" ColumnName="AppIntInfo_PHPCP_ContactOK" />
+                <ScalarProperty Name="AppIntInfo_PHSeizures" ColumnName="AppIntInfo_PHSeizures" />
+                <ScalarProperty Name="AppIntInfo_PHAllergies" ColumnName="AppIntInfo_PHAllergies" />
+                <ScalarProperty Name="AppIntInfo_PHOther" ColumnName="AppIntInfo_PHOther" />
+                <ScalarProperty Name="AppIntInfo_MedsCondition1" ColumnName="AppIntInfo_MedsCondition1" />
+                <ScalarProperty Name="AppIntInfo_MedsMedication1" ColumnName="AppIntInfo_MedsMedication1" />
+                <ScalarProperty Name="AppIntInfo_MedsDosage1" ColumnName="AppIntInfo_MedsDosage1" />
+                <ScalarProperty Name="AppIntInfo_MedsFrequency1" ColumnName="AppIntInfo_MedsFrequency1" />
+                <ScalarProperty Name="AppIntInfo_MedsCondition2" ColumnName="AppIntInfo_MedsCondition2" />
+                <ScalarProperty Name="AppIntInfo_MedsMedication2" ColumnName="AppIntInfo_MedsMedication2" />
+                <ScalarProperty Name="AppIntInfo_MedsDosage2" ColumnName="AppIntInfo_MedsDosage2" />
+                <ScalarProperty Name="AppIntInfo_MedsFrequency2" ColumnName="AppIntInfo_MedsFrequency2" />
+                <ScalarProperty Name="AppIntInfo_MedsCondition3" ColumnName="AppIntInfo_MedsCondition3" />
+                <ScalarProperty Name="AppIntInfo_MedsMedication3" ColumnName="AppIntInfo_MedsMedication3" />
+                <ScalarProperty Name="AppIntInfo_MedsDosage3" ColumnName="AppIntInfo_MedsDosage3" />
+                <ScalarProperty Name="AppIntInfo_MedsFrequency3" ColumnName="AppIntInfo_MedsFrequency3" />
+                <ScalarProperty Name="AppIntInfo_MedsCondition4" ColumnName="AppIntInfo_MedsCondition4" />
+                <ScalarProperty Name="AppIntInfo_MedsMedication4" ColumnName="AppIntInfo_MedsMedication4" />
+                <ScalarProperty Name="AppIntInfo_MedsDosage4" ColumnName="AppIntInfo_MedsDosage4" />
+                <ScalarProperty Name="AppIntInfo_MedsFrequency4" ColumnName="AppIntInfo_MedsFrequency4" />
+                <ScalarProperty Name="AppIntInfo_MedsCondition5" ColumnName="AppIntInfo_MedsCondition5" />
+                <ScalarProperty Name="AppIntInfo_MedsMedication5" ColumnName="AppIntInfo_MedsMedication5" />
+                <ScalarProperty Name="AppIntInfo_MedsDosage5" ColumnName="AppIntInfo_MedsDosage5" />
+                <ScalarProperty Name="AppIntInfo_MedsFrequency5" ColumnName="AppIntInfo_MedsFrequency5" />
+                <ScalarProperty Name="AppIntInfo_MedsOther" ColumnName="AppIntInfo_MedsOther" />
+                <ScalarProperty Name="AppIntInfo_AgreeSignDate" ColumnName="AppIntInfo_AgreeSignDate" />
+                <ScalarProperty Name="AppInfo_ID" ColumnName="AppInfo_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FiveStarResidentInformation">
+            <EntityTypeMapping TypeName="FiveStarDBModel.FiveStarResidentInformation">
+              <MappingFragment StoreEntitySet="FiveStarResidentInformation">
+                <ScalarProperty Name="ResInfo_ID" ColumnName="ResInfo_ID" />
+                <ScalarProperty Name="ResInfo_Status" ColumnName="ResInfo_Status" />
+                <ScalarProperty Name="ResInfo_AcceptDate" ColumnName="ResInfo_AcceptDate" />
+                <ScalarProperty Name="ResInfo_DeclineDate" ColumnName="ResInfo_DeclineDate" />
+                <ScalarProperty Name="ResInfo_RoomID" ColumnName="ResInfo_RoomID" />
+                <ScalarProperty Name="ResInfo_DD214" ColumnName="ResInfo_DD214" />
+                <ScalarProperty Name="ResInfo_TBTest" ColumnName="ResInfo_TBTest" />
+                <ScalarProperty Name="ResInfo_PhotoID" ColumnName="ResInfo_PhotoID" />
+                <ScalarProperty Name="ResInfo_HUDVASH_Vouch" ColumnName="ResInfo_HUDVASH_Vouch" />
+                <ScalarProperty Name="ResInfo_BackCheck" ColumnName="ResInfo_BackCheck" />
+                <ScalarProperty Name="ResInfo_CommRecomendation" ColumnName="ResInfo_CommRecomendation" />
+                <ScalarProperty Name="ResInfo_SSN" ColumnName="ResInfo_SSN" />
+                <ScalarProperty Name="ResInfo_Fname" ColumnName="ResInfo_Fname" />
+                <ScalarProperty Name="ResInfo_Lname" ColumnName="ResInfo_Lname" />
+                <ScalarProperty Name="ResInfo_DOB" ColumnName="ResInfo_DOB" />
+                <ScalarProperty Name="ResInfo_Age" ColumnName="ResInfo_Age" />
+                <ScalarProperty Name="ResInfo_Phone" ColumnName="ResInfo_Phone" />
+                <ScalarProperty Name="ResInfo_Gender" ColumnName="ResInfo_Gender" />
+                <ScalarProperty Name="AppInfo_ID" ColumnName="AppInfo_ID" />
+                <ScalarProperty Name="ResInfo_ExitDate" ColumnName="ResInfo_ExitDate" />
+                <ScalarProperty Name="ResInfo_ExitSummary" ColumnName="ResInfo_ExitSummary" />
+                <ScalarProperty Name="AppIntInfo_ID" ColumnName="AppIntInfo_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

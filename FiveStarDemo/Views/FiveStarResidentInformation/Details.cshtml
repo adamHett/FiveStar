@@ -1,0 +1,195 @@
+﻿@model FiveStarDemo.Models.FiveStarResidentInformation
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2> Profile Details</h2>
+
+<label class="accordion">Demographic Information</label>
+<div class="panel">
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.LabelFor(model => model.ResInfo_ID, "ID")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ResInfo_ID)
+        </dd>
+        <dt>
+            @Html.LabelFor(model => model.ResInfo_Status, "Status")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ResInfo_Status)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.ResInfo_AcceptDate, "Acceptance Date")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ResInfo_AcceptDate)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.ResInfo_DeclineDate, "Declined Date")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ResInfo_DeclineDate)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.ResInfo_RoomID, "Room ID")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ResInfo_RoomID)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.ResInfo_DD214, "DD214")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ResInfo_DD214)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.ResInfo_TBTest, "TB Test")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ResInfo_TBTest)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.ResInfo_PhotoID, "Photo ID")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ResInfo_PhotoID)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.ResInfo_HUDVASH_Vouch, "HUD-VASH Voucher")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ResInfo_HUDVASH_Vouch)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.ResInfo_BackCheck, "Background Check")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ResInfo_BackCheck)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.ResInfo_CommRecomendation, "Committee Recommendations")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ResInfo_CommRecomendation)
+        </dd>
+        <dt>
+            @Html.LabelFor(model => model.ResInfo_CommRecomendation, "Exit Date")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ResInfo_ExitDate)
+        </dd>
+        <dt>
+            @Html.LabelFor(model => model.ResInfo_ExitSummary, "Reason(s) for Leaving")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ResInfo_ExitSummary)
+        </dd>
+    </dl>
+</div>
+
+<label class="accordion">Personal Information</label>
+<div class="panel">
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.LabelFor(model => model.ResInfo_ID, "ID")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ResInfo_ID)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.ResInfo_SSN, "SSN")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ResInfo_SSN)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.ResInfo_Fname, "First Name")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ResInfo_Fname)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.ResInfo_Lname, "Last Name")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ResInfo_Lname)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.ResInfo_DOB, "DOB")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ResInfo_DOB)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.ResInfo_Age, "Age")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ResInfo_Age)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.ResInfo_Phone, "Phone Number")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ResInfo_Phone)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.ResInfo_Gender, "Gender")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ResInfo_Gender)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.FiveStarApplicantInformation.AppInfo_ID, "Application ID")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FiveStarApplicantInformation.AppInfo_ID)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ResInfo_ID }) |
+    @Html.ActionLink("Back to List", "ResidentPortal_All")
+</p>

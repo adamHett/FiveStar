@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Five Star Veterans </title>
+    <link rel="icon" href="~/Content/Images/5Star_IconLogo.png">
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/FiveStarVeterans.css" rel="stylesheet" />
+    <link href="~/Content/drop.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="~/Scripts/respond.js"></script>
+    <script src="~/Scripts/jquery-3.1.1.js"></script>
+    <script src="~/Scripts/jquery-ui-1.12.1.js"></script>
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+    <script src="~/scripts/angular.js"></script>
+    <script src="~/Scripts/angular-ui/ui-bootstrap-tpls.min.js"></script>
+    <script src="~/scripts/controllers/FSD.js"></script>
+    <script src="~/scripts/controllers/FrontDeskPortalViewController.js"></script>
+    <script src="~/Scripts/Controllers/MentalHealthPortalViewController.js"></script>
+    <script src="~/Scripts/Controllers/ResidentPortalViewController.js"></script>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="@Url.Action("Index", "Home")"><img alt="Five Star Veterans" src="@Url.Content("~/Content/Images/5Star_MainLogo.PNG")" width="55" height="55"/></a>
+            </div>
+                <div class="row text-center">
+                    <div class="dropdown">
+                        <button class="dropbtn">Application Document</button>
+                        <div class="dropdown-content">
+                            <a href="~/Content/Images/5S - Admissions Application.pdf">Application for Admission</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">User Manager</button>
+                        <div class="dropdown-content">
+                            @Html.ActionLink("Create User", "Register", "Account")
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Applicant Portal Services</button>
+                        <div class="dropdown-content">
+                            @Html.ActionLink("Create Applicant Profile", "Create", "FiveStarApplicantInformation")
+                            @Html.ActionLink("View Incomplete Applicant Profiles", "FrontDeskPortal_Incomplete", "FiveStarApplicantInformation")
+                            @Html.ActionLink("View All Applicant Profiles", "FrontDeskPortal_All", "FiveStarApplicantInformation")
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Mental Health Portal Services</button>
+                        <div class="dropdown-content">
+                            @Html.ActionLink("Create Mental Health Assessment", "Create", "FiveStarApplicantInterviewInformation")
+                            @Html.ActionLink("View All Applicant Mental Health Assessments", "MentalHealthPortal_All", "FiveStarApplicantInterviewInformation")
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Resident Portal Services</button>
+                        <div class="dropdown-content">
+                            @Html.ActionLink("Create Resident Profile", "Create", "FiveStarResidentInformation")
+                            @Html.ActionLink("View All Resident Profiles", "ResidentPortal_All", "FiveStarResidentInformation")
+                        </div>
+                    </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Reporting Portal Services</button>
+                    <div class="dropdown-content">
+                        @Html.ActionLink("#1101a - Resident Information Report", "ResidentReport", "Reports")
+                        @Html.ActionLink("#2101a - Applicant Information Report", "ApplicantReport", "Reports")
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - gASPdesign Solutions Inc.</p>
+        </footer>
+    </div>
+    <script src="~/Scripts/accordion.js"></script>
+    <script src="~/Scripts/jquery-3.1.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/FiveStarVeterans.js"></script>
+</body>
+</html>

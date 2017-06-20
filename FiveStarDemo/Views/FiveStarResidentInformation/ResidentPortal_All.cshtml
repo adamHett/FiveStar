@@ -1,0 +1,42 @@
+﻿@model FiveStarDemo.Models.FiveStarResidentInformation
+
+@{
+    ViewBag.Title = "ResidentPortal_All";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Resident Portal - Search All Residents</h2>
+
+<div ng-app="FSD">
+    <div ng-controller="ResidentPortalViewController">
+        <hr>
+        <div><input type="text" placeholder="Search Applicant" ng-model="searchResident" /></div>
+        <hr>
+        <div class="card" ng-repeat="item in ARList.AllResidentProfiles | filter : searchResident">
+            <img class="card-img" src="~/Content/Images/5Star_CardPhoto.PNG" alt="Resident Profile" style="width:20%">
+            <div class="card-container">
+                <table class="table">
+                    <tr>
+                        <th>ID</th>
+                        <th>SSN </th>
+                        <th>First Name </th>
+                        <th>Last Name </th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td><label>{{item.ResInfo_ID}}</label></td>
+                        <td><label>({{item.ResInfo_SSN}})</label></td>
+                        <td><label>{{item.ResInfo_Fname}}</label></td>
+                        <td><label>{{item.ResInfo_Lname}}</label></td>
+                        <td>
+                </table>
+                <div class="card-footer">
+                    <a ng-href="@Url.Content("~/FiveStarResidentInformation/Edit/"){{item.ResInfo_ID}}">Edit</a> |
+                    <a ng-href="@Url.Content("~/FiveStarResidentInformation/Details/"){{item.ResInfo_ID}}">Details</a> |
+                    <a ng-href="@Url.Content("~/FiveStarResidentInformation/Delete/"){{item.ResInfo_ID}}">Delete</a>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+</div>
