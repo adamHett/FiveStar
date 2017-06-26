@@ -1291,9 +1291,7 @@
     <Content Include="Views\FiveStarApplicantInterviewInformation\MentalHealthPortal_All.cshtml" />
     <Content Include="Views\Shared\LoginLayout.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
